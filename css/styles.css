@@ -12,8 +12,8 @@ html,body {
 }
 
 .max-width{
-    max-width: 1300px;
-    padding: 0;
+    max-width: 1500px;
+    padding: 0 80px;
     margin: auto;
 }
 
@@ -21,10 +21,14 @@ html,body {
 .navbar{
     position: fixed;
     width: 100%;
-    padding: 15px 0;
-    background: #cc3300;
+    padding: 30px 0;
     font-family: 'Ubuntu', sans-serif;
+    transition: all 0.3s ease;
+}
 
+.navbar.sticky{
+    padding: 15px 0;
+    background: #1a1a1a;
 }
 
 .navbar .max-width{
@@ -39,6 +43,15 @@ html,body {
     font-weight: 600;
 }
 
+.navbar .logo a span{
+    color: #1a1a1a;
+}
+
+.navbar.sticky .logo a span{
+    color: #ff0000;
+    transition: all 0.3s ease;
+}
+
 .navbar .menu li{
     list-style: none;
     display: inline-block;
@@ -49,4 +62,163 @@ html,body {
     font-size: 18px;
     font-weight: 500;
     margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover{
+    color: #ff0000;
+}
+
+/*MENU*/
+.menu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+/*HOME*/
+.home{
+    display: flex;
+    background: url("/images/banner.jpg") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1{
+    font-size: 40px;
+}
+
+.home .home-content .text-2{
+    font-size: 100px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-content .text-3{
+    font-size: 60px;
+    margin: 5px 0;
+}
+
+.home .home-content .text-3 span{
+    color: #1a1a1a;
+    font-weight: 500;
+}
+
+.home .home-content a{
+    display: inline-block;
+    background: #1a1a1a;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 25px;
+    border-radius: 6px;
+    border: 2px solid #1a1a1a;
+    transition: all 0.3s ease;
+}
+
+.home .home-content a:hover{
+    color: #1a1a1a;
+    background: none;
+}
+
+/*RESPONSIVIDADE*/
+@media (max-width: 1005px){ 
+    .home .max-width{
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 995px){
+    .max-width{
+        padding: 0 50px;
+    }
+
+}
+
+@media (max-width: 990px){
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        background: #1a1a1a;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.4s ease;
+    }
+
+    .navbar .menu.active{
+        left: 0;
+    }
+
+    .navbar .menu li{
+        display: block;
+    }
+
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+
+    .home .home-content .text-2{
+        font-size: 70px;
+    }
+
+    .home .home-content .text-3{
+        font-size: 50px;
+    }
+
+    .home .home-content a{
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+
+}
+
+@media (max-width: 650px){
+    .max-width{
+        padding: 0 23px;
+    }
+
+    .home .home-content .text-2{
+        font-size: 60px;
+    }
+
+    .home .home-content .text-3{
+        font-size: 40px;
+    }
+
+    .home .home-content a{
+        font-size: 20px;
+    }
+
+}
+
+@media (max-width: 550px){
+    .home .home-content .text-2{
+        font-size: 50px;
+    }
+
+    .home .home-content .text-3{
+        font-size: 30px;
+    }
+
 }
