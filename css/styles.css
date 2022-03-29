@@ -173,6 +173,7 @@ section{
     background: #fff;
     transform: translateX(-50%);
 }
+
 .about .about-content{
     display: flex;
     flex-wrap: wrap;
@@ -268,6 +269,7 @@ section{
     background: #111;
     transform: translateX(-50%);
 }
+
 .services .services-content{
     color: #fff;
     display: flex;
@@ -332,6 +334,155 @@ section{
     background: none;
     color: #fff;
     border: 2px solid #fff;
+}
+
+/*HABILIDADES*/
+.skills{
+    font-family: 'Poppins', sans-serif;
+    color: #1a1a1a;
+    background: #fff;
+}
+
+.skills .title{
+    color: #1a1a1a;
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.skills .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #1a1a1a;
+    transform: translateX(-50%);
+}
+
+.skills .title::after{
+    content: "Conhecimento";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: #ff0000;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+.skills .skills-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    text-align: justify;
+}
+
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+
+.skills .skills-content .left{
+    width: 45%;
+}
+
+.skills .skills-content .left .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.skills .skills-content .left a{
+    display: inline-block;
+    background: #1a1a1a;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 20px;
+    margin-top: 25px;
+    border-radius: 6px;
+    border: 2px solid #1a1a1a;
+    transition: all 0.3s ease;
+}
+
+.skills .skills-content .left a:hover{
+    background: none;
+    color: #1a1a1a;
+    border: 2px solid #1a1a1a;
+}
+
+.skills .skills-content .right{
+    padding-top:30px;
+    width: 45%;
+}
+
+.skills .skills-content .right .bars{
+    margin-bottom: 10px;
+}
+
+.skills .skills-content .right .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills .skills-content .right span{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: #a1a1a1;
+    position: relative;
+}
+
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #ff0000;
+}
+
+.skills-content .right .java::before{
+    width: 80%;
+}
+
+.skills-content .right .spring::before{
+    width: 70%;
+}
+
+.skills-content .right .html::before{
+    width: 80%;
+}
+
+.skills-content .right .css::before{
+    width: 80%;
+}
+
+.skills-content .right .js::before{
+    width: 50%;
+}
+
+.skills-content .right .angular::before{
+    width: 60%;
+}
+
+.skills-content .right .ionic::before{
+    width: 50%;
+}
+
+.skills-content .right .sql::before{
+    width: 80%;
 }
 
 /*RESPONSIVIDADE*/
@@ -430,6 +581,10 @@ section{
         width: calc(50% - 10px);
         margin-bottom: 25px;
     }
+
+    .skills .skills-content .columns{
+        width: 100%;
+    }
 }
 
 @media (max-width: 650px){
@@ -454,6 +609,9 @@ section{
     }
 
     .services .services-content .card{
+        width: 100%;
+    }
+    .skills .skills-content .column{
         width: 100%;
     }    
 }
