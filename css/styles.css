@@ -824,6 +824,25 @@ section{
 
 }
 
+@media (max-width: 725px){
+    .contact .title::after{
+        font-size: 18px;
+    }
+    
+    .contact .contact-content .column{
+        width: 100%;
+    }  
+
+    .contact .contact-content .left{
+        padding-bottom: 25px;
+    }
+
+    .contact .contact-content .right{
+        border-top: 2px solid #a1a1a1;
+        padding-top: 25px;
+    }
+}
+
 @media (max-width: 705px){
     .apps .carousel .card .text a{
         font-size: 18px;
