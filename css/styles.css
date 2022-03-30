@@ -366,7 +366,7 @@ section{
 }
 
 .skills .title::after{
-    content: "Conhecimento";
+    content: "Minhas stacks";
     position: absolute;
     bottom: -12px;
     left: 50%;
@@ -592,6 +592,130 @@ section{
     background: #ff0000!important;
 }
 
+/*CONTATO*/
+.contact{
+    font-family: 'Poppins', sans-serif;
+    color: #1a1a1a;
+    background: #fff;
+}
+
+.contact .title{
+    color: #1a1a1a;
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.contact .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 200px;
+    height: 3px;
+    background: #1a1a1a;
+    transform: translateX(-50%);
+}
+
+.contact .title::after{
+    content: "Mais informações";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: #ff0000;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+.contact .contact-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    text-align: justify;
+}
+
+.contact .contact-content .column{
+    width: calc(50% - 30px);
+}
+
+.contact .contact-content .text{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact .contact-content .left p{
+    text-align: justify;
+}
+
+.contact .contact-content .left .icons{
+    margin: 10px 0;
+}
+
+.contact .contact-content .row{
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.contact .contact-content .row .info{
+    margin-left: 30px;
+}
+
+.contact .contact-content .row i{
+    font-size: 25px;
+    color: #ff0000;
+}
+
+.contact .contact-content .info .head{
+    font-weight: 600;
+}
+
+.contact .contact-content .info .subtitle{
+    color: #222;
+}
+
+.contact .contact-content .right .card{
+    background: #fff;
+    border-radius: 6px;
+    padding: 8px 25px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.contact .contact-content .right .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.contact .contact-content .right .card .box i{
+    cursor: pointer;
+    font-size: 30px;
+}
+
+.contact .contact-content .right .card:hover{
+    background: #f0f0f0;
+    transform: scale(1.02);
+}
+
+.contact .contact-content .right .card .text{
+    font-size: 20px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.contact .contact-content .right .card .text a{
+    color: #1a1a1a;
+}
 
 /*RESPONSIVIDADE*/
 @media (max-width: 1300px){ 
@@ -693,6 +817,17 @@ section{
     .skills .skills-content .columns{
         width: 100%;
     }
+
+    .contact .contact-content .columns{
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 705px){
+    .apps .carousel .card .text a{
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 650px){
@@ -721,7 +856,11 @@ section{
     }
     .skills .skills-content .column{
         width: 100%;
-    }    
+    }
+    
+    .contact .contact-content .column{
+        width: 100%;
+    }      
 }
 
 @media (max-width: 550px){

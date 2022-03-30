@@ -27,7 +27,7 @@ $(document).ready(function(){
                 nav: false
             },
             1000:{
-                items: 2,
+                items: 3,
                 nav: false
             }
         }
