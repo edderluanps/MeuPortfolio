@@ -717,6 +717,60 @@ section{
     color: #1a1a1a;
 }
 
+.contact .contact-content .right .card .text a:hover{
+    color: #ff0000;
+}
+
+/*FOOTER*/
+.footer{
+    background: #1a1a1a;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+.footer .title{
+    color: #a1a1a1;
+    position: relative;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.footer .footer-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.footer .footer-content .icons{
+    font-size: 40px;
+    padding: 20px;
+}
+
+.footer .footer-content .icons i{
+    padding-top: 9px;
+    height: 60px;
+    width: 60px;
+    background: #111;
+    border-radius: 50%;
+    color: #a1a1a1;
+    transition: all 0.5s ease;
+    border: 2px solid #222;
+}
+
+.footer .footer-content .icons i:hover{
+    cursor: pointer;
+    background: #f0f0f0;
+    color: #1a1a1a;
+    font-size: 40px;
+    font-weight: 500;
+}
+
 /*RESPONSIVIDADE*/
 @media (max-width: 1300px){ 
     .home .max-width{
