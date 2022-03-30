@@ -295,7 +295,7 @@ section{
 }
 
 .services .services-content .card:hover .box{
-        transform: scale(1.02);
+    transform: scale(1.02);
 }
 
 .services .services-content .card i{
@@ -485,6 +485,114 @@ section{
     width: 80%;
 }
 
+/*PROJETOS*/
+.apps{
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background: #111;
+}
+
+.apps .title{
+    color: #fff;
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.apps .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 200px;
+    height: 3px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+.apps .title::after{
+    content: "Pequena amostra";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: #ff0000;
+    padding: 5px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+.apps .carousel .card{
+    background: #1a1a1a;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.apps .carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.apps .carousel .card:hover{
+    background: #222;
+    transform: scale(1.02);
+}
+
+.apps .carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+.apps .carousel .card .text a{
+    color: #fff;
+}
+
+.apps .carousel .card img{
+    height: 150px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 6%;
+    border: 5px solid #111;
+}
+
+.apps .carousel .card:hover img{
+    border: 5px solid #1a1a1a;
+}
+
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid #ff0000!important;
+    transition: all 0.3s ease;
+}
+
+.owl.dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+
+.owl.dot.active,.owl-dot:hover{
+    background: #ff0000!important;
+}
+
+
 /*RESPONSIVIDADE*/
 @media (max-width: 1300px){ 
     .home .max-width{
@@ -627,5 +735,11 @@ section{
 
     .home .home-content .text-3 span{
         font-size: 30px;
+    }
+}
+
+@media (max-width: 400px){
+    .apps .title::after{
+        font-size: 15px;
     }
 }
