@@ -8,6 +8,10 @@
     text-decoration: none;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 html,body {
     height: 100%;
 }
@@ -77,6 +81,31 @@ html,body {
     font-size: 23px;
     cursor: pointer;
     display: none;
+}
+
+/*SCROLL UP*/
+.scroll-up-btn{
+    background: #ff0000;
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    right: 30px;
+    bottom: 30px;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.scroll-up-btn.show{
+    opacity: 1;
+    pointer-events: auto;
 }
 
 /*HOME*/
