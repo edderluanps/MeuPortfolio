@@ -25,6 +25,20 @@ $(document).ready(function(){
         $('.navbar .menu').toggleClass("active");
     });
 
+    var typed = new Typed(".texto", {
+        strings: ["Desenvolvedor Back-End", "Desenvolvedor Front-End", "Desenvolvedor Full Stack"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
+
+    var typed = new Typed(".texto-2", {
+        strings: ["Desenvolvedor Back-End", "Desenvolvedor Front-End", "Desenvolvedor Full Stack"],
+        typeSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    });
+
     $('.carousel').owlCarousel({
         margin: 20,
         loop: true,
