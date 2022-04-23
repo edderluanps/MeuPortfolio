@@ -23,6 +23,7 @@ $(document).ready(function(){
 
     $('.menu a').click(function(){
         $('.navbar .menu').toggleClass("active");
+        $('.menu-btn i').toggleClass("active");
     });
 
     var typed = new Typed(".texto", {

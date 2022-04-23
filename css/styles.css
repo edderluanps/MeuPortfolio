@@ -83,6 +83,10 @@ html,body {
     display: none;
 }
 
+.menu-btn i.active{
+    content: "\f00d";
+}
+
 /*SCROLL UP*/
 .scroll-up-btn{
     background: #ff0000;
